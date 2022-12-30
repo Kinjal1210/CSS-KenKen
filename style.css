@@ -5,3 +5,65 @@
 html {
   font-size: 10px;
 }
+body{
+  height: 500px;
+  margin: 5px;
+  width: 500px;
+  background: rgb(61, 195, 119);
+  margin-top: 50px;
+  margin-bottom: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: .5rem solid rgb(37, 31, 31);
+  width: 350px;
+  height: 350px;
+}
+
+.grid-items{
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: rgb(178, 136, 136);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 109, 166);
+}
+
+#box3, #box7, #box10, #box11, #box12, #box15 {
+  border-left: 0.5rem solid black;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11 {
+  border-bottom: 0.5rem solid black;
+}
+
+.prompt{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.answer{
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.special{
+  border: none;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 475px) {
+  html { font-size: 16px;
+}
+}
